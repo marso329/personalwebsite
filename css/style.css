@@ -15,11 +15,25 @@
     animation-fill-mode:forwards;
 }
 
+.Name{
+        animation-name: fadeInHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+
 .MyName{
     text-align:center;
 }
 .MyTitle{
     text-align:center;
+}
+
+.bg-myColor {
+  background-color: #30548a !important;
 }
 
 body {background-color: #CAEBF2;

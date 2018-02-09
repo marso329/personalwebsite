@@ -9148,6 +9148,7 @@ $.widget( "metro.tile" , {
             case 'slideDown': this._effectSlideDown(currentFrame, nextFrame); break;
             case 'slideUpDown': this._effectSlideUpDown(currentFrame, nextFrame); break;
             case 'slideLeftRight': this._effectSlideLeftRight(currentFrame, nextFrame); break;
+            case 'slideLeftLeftDown': this._effectSlideLeftLeftDown(currentFrame, nextFrame); break;
             default: this._effectSlideUp(currentFrame, nextFrame);
         }
     },
@@ -9164,6 +9165,17 @@ $.widget( "metro.tile" , {
         if (this._currentIndex % 2 === 0) {
             this._effectSlideUp(currentFrame, nextFrame);
         } else {
+            this._effectSlideDown(currentFrame, nextFrame);
+        }
+    },
+        _effectSlideLeftLeftDown: function(currentFrame, nextFrame){
+        if (this._currentIndex == 1) {
+            this._effectSlideLeft(currentFrame, nextFrame);
+        }
+        if (this._currentIndex == 2) {
+            this._effectSlideLeft(currentFrame, nextFrame);
+        }
+            else {
             this._effectSlideDown(currentFrame, nextFrame);
         }
     },
