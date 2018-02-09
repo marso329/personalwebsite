@@ -2,10 +2,17 @@
 
 
 .Header{
-   margin: auto;
+    margin: auto;
     width: 50%;
     padding: 10px;
     text-align:center;
+    animation-name: fadeInHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
 }
 
 .MyName{
@@ -19,7 +26,7 @@ body {background-color: #CAEBF2;
     animation-name: fadeInBody;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode:forwards;}
 
 
@@ -30,12 +37,27 @@ body {background-color: #CAEBF2;
     }
     100% {
         opacity: 1;
-        background-color: #CAEBF2;
+        background-color: #30548a;
+    }
+}
+
+@keyframes fadeInHeader {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
 .tile-group{
     margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.tile-container{
+    justify-content: center;
 }
 
 
