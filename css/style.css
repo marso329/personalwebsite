@@ -4,7 +4,7 @@
 .Header{
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 0px;
     text-align:center;
     animation-name: fadeInHeader;
     animation-iteration-count: 1;
@@ -16,7 +16,7 @@
 }
 
 .Name{
-        animation-name: fadeInHeader;
+    animation-name: fadeInHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     opacity: 0;
@@ -33,7 +33,7 @@
 }
 
 .bg-myColor {
-  background-color: #30548a !important;
+    background-color: #30548a !important;
 }
 
 body {background-color: #CAEBF2;
@@ -67,6 +67,8 @@ body {background-color: #CAEBF2;
 .tile-group{
     margin-left: 0px;
     margin-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 
